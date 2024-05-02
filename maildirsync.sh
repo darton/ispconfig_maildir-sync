@@ -1,5 +1,8 @@
 #!/bin/bash
 
+REMOTESERVER='192.168.1.1' #remote ispconfig ip address or fqdn name
+DOMAINS=("example.com" "example.org" "example.net")
+
 DEBUG=true
 SCRIPT_DIR=$(dirname $(readlink -f "$0"))
 SCRIPT_NAME=$(basename $0)
@@ -11,8 +14,6 @@ LOG_DIR="${SCRIPT_DIR}"
 LOG_FILE_NAME="$(basename -s .sh "$0").log"
 LOG_FILE_PATH="${LOG_DIR}/${LOG_FILE_NAME}"
 
-REMOTESERVER='192.168.1.1' #remote ispconfig ip address or fqdn name
-DOMAINS=("example.com" "example.org" "example.net")
 MAILPATH='/var/vmail'
 
 ### Functions ###
