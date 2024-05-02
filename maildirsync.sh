@@ -3,6 +3,7 @@
 REMOTESERVER='192.168.1.1' #remote ispconfig ip address or fqdn name
 DOMAINS=("example.com" "example.org" "example.net")
 
+#Internal variables
 DEBUG=true
 SCRIPT_DIR=$(dirname $(readlink -f "$0"))
 SCRIPT_NAME=$(basename $0)
